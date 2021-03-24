@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mt-5">This is an example of the website</h1> 
+
+If you want to make a prediction using the created models, send a request to http://0.0.0.0:8080/predict. In particular, you can do it from a Terminal:
+curl -i -X POST -H 'Content-Type: application/json' -d '{"country": "united_kingdom", "year": "2018", "month": "10", "day": "11"}' http://0.0.0.0:8080/predict
+
+{% endblock %}
+
+
